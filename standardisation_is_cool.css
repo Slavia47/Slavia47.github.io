@@ -1,0 +1,166 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin-left: 200px;
+    background-color: lightsteelblue;
+    margin-top: 0px;
+    margin-right: 500px;
+  }
+/*
+sidenavs
+*/
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.rightbar{
+    height: 100%;
+    width: 500px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 20px;
+    color: white;
+}
+
+
+.carousel {
+    position: relative;
+    width: 500px;
+    height: 250px; 
+    overflow: hidden;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+  }
+  
+  .carousel-images {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    width: 4500px; 
+    height: 250px;
+    transition: left .5s ease-in-out;
+  }
+
+  .carousel-images img {
+    width: 500px;
+    height: 250px;
+  }
+  .carousel nav {
+
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+    width: 500px;
+    height: 200px;
+    line-height: 200px;
+  }
+  .carousel nav a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 30pt;
+    padding: 0px 25px;
+    transition: all .25s ease;
+    opacity: 0;
+    background-color: rgba(0,0,0,0);
+  }
+  .carousel nav:hover a {
+    transition: all .25s ease;
+    opacity: 1;
+    background-color: rgba(0,0,0,0.15);
+  }
+
+  .carousel-caption {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+    background-color: rgba(0,0,0,0.25);
+    height: 50px;
+    line-height: 50px;
+    margin: 0px;
+  }
+
+/*
+sidenavs end
+*/
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/*
+footer
+*/
+footer {
+    position: fixed;
+    left: 200;
+    bottom: 0;
+    width: 100%;
+    background-color: silver;
+}
+/*
+footer end 
+start sub form
+*/
+#new-todo{
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+#addNewTodo{
+    border-radius: 0px 5px 5px 0px;
+}
+input[type=text] {
+    width: 400px;
+}
+
+
+
+/*
+submition form ends
+*/
+
+@media (max-width: 1180px) {
+    body { 
+      background-color: yellowgreen; 
+    } 
+    .rightbar{ 
+      align-self: baseline; 
+      top: auto; 
+      background-color: blueviolet; 
+      height: min-content; 
+      position: fixed; 
+      left: 200; 
+      width: 100%; 
+    } 
+  
+  } 
