@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var prev = document.getElementById('carouselPrev');
     var next = document.getElementById('carouselNext');
     
-    fetch("")
+    fetch("Gallary.json")
   
     .then(function(res) {
       res.json().then(function(json) {
