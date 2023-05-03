@@ -1,0 +1,158 @@
+/* Comenting will only define what it does once like color setting the colour of the text*/
+
+html,
+body{/* body element to take away margin and set the page to always be 100% tall */
+  margin: 0px;
+  height: 100%;
+}
+
+.flex-container {/* Container for all flexbox behavior */
+  min-height: 100%;/* makes sure flexboxes fill all page */
+  display: flex;/* sets to flexbox behaviour*/
+  flex-direction: row;/* tells elements to be in a row */
+  font-size: 20px/* set font size */
+}
+
+.topnav.high-contrast{/* sets 'default view' styles. */
+  background-color: #333;/* Sets background colour */
+  color: greenyellow;/* Set text colour*/
+  overflow: hidden;/* adjusts box to hide witspace dynamicaly  */
+  
+}
+.topnav{/* Sets the styles for after the button is pressed */
+  background-color: black;/* Sets background colour after button press*/
+  color: orange;/* Set text colour after button press*/
+  overflow: hidden;/* adjusts box to hide witspace dynamicaly after button press*/
+}
+.bottom.high-contrast{/* see above as its a coppy but for the footer and has same code */
+  background-color: gray;
+  color: yellowgreen;
+  overflow: hidden;
+}
+footer {
+  background-color: black;
+  color: orange;
+  overflow: hidden;
+}
+
+.sidenav.high-contrast{/* sets 'default view' styles for the side navigation button */
+  background-color: lightgray;
+  padding: 10px;/* sets the space aound it to 10 px */
+}
+.sidenav.high-contrast a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;/* makes sure there is no aplied style decoration*/
+  font-size: 25px;/* set size of text */
+  color: green;
+}
+.sidenav.high-contrast a:hover{/* gets called when curser is over the button*/
+  color: black;
+}
+section{/* sets 'high contrast view' styles for sidnav */
+  background-color: black;
+  color: yellowgreen;
+  padding: 10px;
+  
+}
+section a{
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: orange;
+  display: block;
+  
+}
+section a:hover{
+  color: white;
+}
+.flex-item-center.high-contrast{/* sets 'default view' styles for the central page div*/
+  background-color: lightsteelblue;
+  color: black;
+  padding: 10px;
+}
+div{/* sets 'high contrast view' styles. for flex item center*/
+  background-color: darkgray;
+  color: Orange;
+}
+.rightbar.high-contrast{/* sets 'default view' styles for the right page (aside)*/
+  background-color: lightgray;
+  padding: 10px;
+  color: green;
+}
+
+aside{/* sets 'high contrast view' styles for the rightbar*/
+  background-color: black;
+  color: orange;
+  padding: 10px;
+}
+
+.carousel {/*calles the carusel class*/
+  position: relative;/* sets position to automaicly palce itself relitivly to the object its inside*/
+  width: 500px;/* sets width of carusel*/
+  height: 250px; /* sets hight of carusel*/
+  overflow: hidden;/* hides the other objects in the carusel*/
+  margin: auto;/* automaticaly applys default margin settings*/
+  border-radius: 8px;/* sets size of border*/
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.2);/* sets box shaddow to black*/
+}
+
+.carousel-images {/* sets styling for imagess as colective*/
+  position: absolute;/* forces their position*/
+  z-index: 1;/* force it to be front of element*/
+  left: 0;/* sets it to be the leftmost picture*/
+  width: 4500px; /*set total width */
+  height: 250px;/* set total hight*/
+  transition: left .5s ease-in-out;/* sets transition period*/
+}
+
+.carousel-images img {/* set styles for individual image*/
+  width: 500px;
+  height: 250px;
+}
+.carousel nav {/* set the arrowkey behavior*/
+  display: flex;/*set to flexbox*/
+  justify-content: space-between;/*sets there to be space beteen */
+  position: absolute;/*creates absolute positions*/
+  z-index: 2;/*brings it infront of the carusel*/
+  width: 500px;
+  height: 200px;
+  line-height: 200px;/* sets the the vertical distance between two lines of type*/
+}
+.carousel nav a {/*set  arrowkey styling*/
+  text-decoration: none;/*removes any text decoration */
+  color: #FFF;
+  font-weight: bold;/*makes font bold */
+  font-size: 30pt;
+  padding: 0px 25px;
+  transition: all .25s ease;/*sets how the transition should be done with all taking 25 secs and easing out */
+  opacity: 0;/*makes them invisible in not hovered */
+  background-color: rgba(0,0,0,0);
+}
+.carousel nav:hover a {/*set hover behaviour for arowkeys */
+  transition: all .25s ease;
+  opacity: 1;/*makes them visible */
+  background-color: rgba(0,0,0,0.15);
+}
+
+.carousel-caption {/*set styling for carusel */
+  position: absolute;
+  z-index: 3;/*btings in front of both of the carusel image and arowkeys as +1 int opver other brings it befor them */
+  bottom: 0;/*forces it to be at the bottom of the carusel with absolute position */
+  text-align: center;/*moves text to be in the center */
+  width: 100%;/*makes use all carusel width */
+  color: white;
+  background-color: rgba(0,0,0,0.25);
+  height: 50px;
+  line-height: 50px;
+  margin: 0px;
+}
+
+@media (max-width: 1000px) {/*media queary cheack how wide the screen is */
+  .flex-container {
+    flex-direction: column;/*changes the flexboxes behaviour to make everything go into a column */
+  }
+}
+
+
+
+

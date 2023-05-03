@@ -1,0 +1,84 @@
+html,
+body{ /* set main body styels */
+  margin: 0px;
+  height: 100%;
+  background-color: lightsteelblue;
+}
+
+.topnav {/* styles for the headder */
+  background-color: #333;
+  overflow: hidden;
+  color: greenyellow;
+}
+.flex-container {/* agian the generic styles for the container */
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px
+}
+  
+  
+.sidenav {/* styles for the sidenvigation */
+  background-color: black;
+  padding: 10px;
+}
+  
+.sidenav a {/* for individual sidenavigation anchors */
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: greenyellow;
+  display: block;
+}
+  
+.sidenav a:hover {/* when hovered over */
+  color: #f1f1f1;
+}
+
+
+.gallery {/* styles for the gallary */
+  display: flex;/* gives it the ability to flex to row layout without become colums */
+  flex-wrap: wrap;/* makes the row become a 3x3 layoput  */
+  justify-content: space-between;/* increases space between */
+}
+
+.gallery-item {/* give style to individual immages */
+  display: flex;/* makes them display as flexboxes in single long element */
+  flex-direction: column;/* makes them separated into colum with captions beneeth them arther then on side */
+  width: 33%;/* makes them take up 33% of page (makes the flex to the 9x9 layout */
+  margin-bottom: 15px;/* increases bottom space */
+  text-decoration: none;/* removes text decoration(the underline) */
+  color: #333;
+  padding: 5px;/* ads more space between them (removes 9x9 layout) */
+  box-sizing: border-box;/* moves back to 9x9 layout by changing box sizing */
+}
+
+.gallery-item img {
+  width: 100%;/* maxes immage width */
+}
+
+.gallery-item caption {/* style for captions */
+  margin-top: 5px;/* increase top margin */
+  font-size: 0.75em;
+}
+
+.gallery-item:hover {/* when curser on */
+  background-color: #333;/* change color of border*/
+}
+
+.gallery-item:hover caption {/* when curser on */
+  color: #fff;/* make text color white when hovered over */
+}
+
+@media(max-width: 600px) {/* on width */
+  .gallery-item {
+    width: 50%
+  }
+}
+
+@media(max-width: 500px) {
+  .gallery-item {
+    width: 100%;/* set width to full page */
+  }
+}
