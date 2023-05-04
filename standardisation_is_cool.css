@@ -74,6 +74,9 @@ div{/* sets 'high contrast view' styles. for flex item center*/
   background-color: darkgray;
   color: Orange;
 }
+main{
+  padding: 10px;
+}
 .rightbar.high-contrast{/* sets 'default view' styles for the right page (aside)*/
   background-color: lightgray;
   padding: 10px;
